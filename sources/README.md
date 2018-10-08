@@ -1,6 +1,6 @@
 # Anagram sources
 
-#Current 
+# Current 
 
 anagram main ->
 	as of now takes a word and checks of that word is subset of a random
