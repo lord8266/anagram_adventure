@@ -1,4 +1,4 @@
-Anagram Adventure
+#Anagram Adventure
 
 A puzzle game where you defeat enemies by spelling words
 
