@@ -8,7 +8,7 @@ all:$(OBJECTS)
 	rm *.o
 
 anagram_base.o:
-	g++ $(CFLAGS) -c $(dir)/anagram_base.cc -o anagram_base.o  $(LDLIBS)
+	g++ $(CFLAGS) -c $(dir)/anagram_base.cc -o anagram_base.o  
 
 anagram_main.o:
-	g++ $(CFLAGS) -c $(dir)/anagram_main.cc -o anagram_main.o  $(LDLIBS)
+	g++ $(CFLAGS) -c $(dir)/anagram_main.cc -o anagram_main.o  
