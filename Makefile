@@ -1,5 +1,5 @@
 P=$(m)
-
+#im no makefile expert
 CFLAGS=-Wall -Werror -Wno-unused-variable -Wno-unused-value  -std=gnu++17 -g
 OBJECTS= anagram_base.o anagram_main.o
 dir=sources
