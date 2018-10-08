@@ -4,7 +4,7 @@ CFLAGS=-Wall -Werror -Wno-unused-variable -Wno-unused-value  -std=gnu++17 -g
 OBJECTS= anagram_base.o anagram_main.o
 dir=sources
 all:$(OBJECTS)
-	g++ $(CFLAGS) $(OBJECTS) -o $(P) $(LDLIBS)
+	g++ $(CFLAGS) $(OBJECTS) -o $(P) 
 	rm *.o
 
 anagram_base.o:
