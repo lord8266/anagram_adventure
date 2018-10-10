@@ -7,18 +7,6 @@
 as of now takes a word and checks if that word can be spelled from
 a list of characters
 
- prints in a format like this
- 
- ---------------------
- | I | K | W | U | W |
- ---------------------
- | V | A | Q | D | A |
- ---------------------
- | S | C | I | Q | M |
- ---------------------
- | T | R | C | Y | G |
- ---------------------
-
 ###
 
 ### anagram_wordgen
