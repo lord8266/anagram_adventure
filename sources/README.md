@@ -7,7 +7,8 @@
 as of now takes a word and checks if that word can be spelled from
 a list of characters
 
-prints in a format like this
+ prints in a format like this
+ 
  ---------------------
  | I | K | W | U | W |
  ---------------------
