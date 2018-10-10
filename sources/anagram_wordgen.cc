@@ -107,7 +107,7 @@ bool word_gen::check_and_update(const string &users_word) {
    /* for each char in use word
       first check if it is vowel or consonant
       and then replace it with a new character of its type
-      and hence not affecting the positiopn of any ither character
+      and hence not affecting the position of any other character
     */
     temp_loc = random_char_list.find(c);
     if( consonants.find(c)!=string::npos) {
@@ -127,7 +127,7 @@ _anagram->set_random_string(random_char_list);
 }
 
  return ret;
- // return waht anagram's check_word returns
+ // return what anagram's check_word returns
 }
 
 void word_gen::update_engines() {
