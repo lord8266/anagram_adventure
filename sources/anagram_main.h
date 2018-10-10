@@ -9,6 +9,7 @@
 #include <map>
 #include <set>
 #include <fstream>
+#include <random>
 
 using std::ifstream;
 using std::pair;
@@ -29,6 +30,6 @@ extern "C" {
 /*----    start of game headers  -------*/
 
 #include "anagram_base.h"
-
+#include "anagram_wordgen.h"
 
 #endif

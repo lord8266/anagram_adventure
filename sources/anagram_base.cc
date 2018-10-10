@@ -7,7 +7,10 @@
 
 
 
-anagram::anagram(const string& path):path_to_file(path) {
+anagram::anagram(const string& path,const string& random_string):
+ current_random_string(random_string) , path_to_file(path)
+ //initiliaze with random_string and path to word list
+ {
   ifstream file_from(path); //load stream from path
 
   string word; //holds the current word
@@ -15,7 +18,7 @@ anagram::anagram(const string& path):path_to_file(path) {
   while(file_from>>word) {
     list.insert(word); //add each word into list
   }
-
+ sort(current_random_string); // sorts the string needed
 }
 
 bool anagram::check_word(const string& word) {
