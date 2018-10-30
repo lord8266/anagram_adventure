@@ -36,13 +36,19 @@ char word_gen::gen_vowel() {
   each letter can only be repeated twice in the random_char list */
 
   if (char_box.find(temp)!=char_box.end()) {
-     if(char_box[temp]==2) {
-       temp = gen_vowel(); // recurively call to generate a new character
-     }
-     else {
-      char_box[temp]++; // increase the count of character
-     }
-  }
+    int &len = char_box[temp];
+    switch (temp) {
+      case 'u':
+        // that means there is one u then generate another char
+        /* since u must not repeat more than once */
+        temp =gen_vowel();// recurively call to generate a new character
+      default:
+        if (len ==2){
+          temp =gen_vowel(); // if len is greater than 2
+        }
+      }
+    len++;// increase the count of character
+    }
   else {
     char_box[temp]=1; // otherwise set to 1
   }
@@ -55,13 +61,21 @@ char word_gen::gen_consonant() {
   char temp = consonants[consonants_make(consonants_engine)];
 
   if (char_box.find(temp)!=char_box.end()) {
-     if(char_box[temp]>2) {
-       temp = gen_consonant();
-     }
-     else {
-      char_box[temp]++;
-     }
-  }
+    int &len = char_box[temp];
+    switch (temp) {
+      case 'z':case 'w' :case 'x':case 'y':
+        // that means there is one u then generate another char
+        /* since z w v must not repeat more than once */
+        temp =gen_vowel();// recurively call to generate a new character
+                          // and add a vowel now
+      default:
+        if (len ==2){
+          temp =gen_consonant(); // if len is greater than 2
+        }
+      }
+    len++;// increase the count of character
+    }
+
   else {
     char_box[temp]=1;
   }
@@ -69,7 +83,7 @@ char word_gen::gen_consonant() {
 }
 
 void word_gen::print_formatted() {
-  /*
+  /* 
   prints in this format
   ---------------------
   | U | P | Z | A | P |
