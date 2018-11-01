@@ -151,7 +151,8 @@ void game::print_health_formatted(game_entity* ge) {
  //---------------------------- destructors ----------------------------
 
  game::~game() {
-   delete buffer;
+   delete[] buffer;
+   //delete the buffer 
    delete _player;
    delete _enemy;
  }
