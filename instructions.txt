@@ -1,0 +1,39 @@
+this is a game where you destory enemies by spelling words
+
+for example you will be given a list like this
+
+ ---------------------
+ | A | I | P | U | D |
+ ---------------------
+ | I | O | F | E | Q |
+ ---------------------
+ | O | L | X | L | P |
+ ---------------------
+ | G | T | N | E | N |
+ ---------------------
+
+Enter your word:
+now the word paid can be spelled
+when you type in paid you get
+
+ word: paid outputs: 22 damage
+ ++++++++++++++++++++++++++++++
+ enemy : steel     |============================                      |
+ player: silver    |==================================================|
+ ++++++++++++++++++++++++++++++
+
+where steel is the enemy's name and silver is you
+silver has full health as steel lost health based on the word you gave
+
+and now it is the enemy's turn
+
+chance of: enemy: steel
+
+Sending damage: 11
+++++++++++++++++++++++++++++++
+enemy : steel     |============================                      |
+player: silver    |=======================================           |
+++++++++++++++++++++++++++++++
+
+if you see the enemy steel gave you 11 damage in return
+this damage will vary as you move on

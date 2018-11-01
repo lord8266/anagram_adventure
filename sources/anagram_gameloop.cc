@@ -22,6 +22,7 @@ game_entity(health,name,g) {
    _enemy->target = _player;
    //set the targets for player and enemy
    running =true;
+   start();//start the game
    //set running to true
   }
 
@@ -125,7 +126,6 @@ void game::start() {
   cout<<"You need to spell a word and damage would depend on "<<endl;
   cout<<"how big your word is and some more extras\n"<<endl;
 
-  cout<<"player: "<<_player->name<<" starts"<<endl;
 
 }
 
