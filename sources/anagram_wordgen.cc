@@ -154,7 +154,7 @@ void word_gen::update_engines() {
 
 void word_gen::shuffle_new() {
   //sloppy way i guess
-  int max_vowel_cnt = 7; // the maximum vowels
+  int max_vowel_cnt = 5; // the maximum vowels
     int curr_vowel_cnt = 0;
     int next_vowel = 0; // holds when the next vowel should be generated
 
