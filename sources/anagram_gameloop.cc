@@ -79,7 +79,7 @@ void enemy::get_damage(const float& dp) {
   //
   //remove that much  health
   health-=dp;
-  // if health goes below zero then the se3nder of damage wins
+  // if health goes below zero then the sender of damage wins
   if(health<=0) {
     connection->running =false;
   }
