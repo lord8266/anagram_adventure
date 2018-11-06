@@ -12,7 +12,7 @@ int main() {
 
   //if came out because of error
   if(g1.error) {
-    cout <<"an error occured ingame ,sorry"<<endl;
+    cout <<"an error occured in the game,sorry"<<endl;
 
   }
   else {
