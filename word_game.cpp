@@ -1,10 +1,11 @@
 #include<iostream>
 #include<cstdlib>
 #include<fstream>
-#include<vector>
+#include <set>
 using namespace std;
 void printLettersInAGrid(char []);
-vector <string> dictionary;
+set <string> dictionary;
+
 void readFile()
 {
     fstream f;
@@ -13,9 +14,10 @@ void readFile()
         char a[100];
         while(f.getline(a,100,'\n'))
         {
-            dictionary.push_back(a);
+            dictionary.insert(a);
         }
     }
+
 }
 
 void makeRandomLetters(char a[]) // Creates a sequence of 20 random letters consisting 5 vowels and 15 consonants.
