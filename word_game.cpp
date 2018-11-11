@@ -123,11 +123,14 @@ void print_health(int *hp) { //prints health of both
   cout<<"\n+++++++++++++++++++++++++++++++++\n"<<endl;
 }
 int enemy_damage(int* player_health) {
-  *player_health-=7;
+  static int check = 0;
+  if (check++ ==3)
+    *player_health-=5;
+  *player_health-=15;
 }
 
 int player_damage(const string& word,int *enemy_health) {
-  *enemy_health-= word.size()*3;
+  *enemy_health-= word.size()*4;
   //outputs damage based on word size multiplied by 3
   //so more bigger word your damage increases three folds
 }
@@ -178,7 +181,7 @@ int main()
         if(check_complete(hp)) break; //if helath gone berlow zero end the game
         enemy_damage(&hp[0]); //hp[0] is the player health
         if(check_complete(hp)) break;
-
+        makeRandomLetters(base);
         print_health(hp);
 
   }
