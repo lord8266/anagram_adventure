@@ -158,7 +158,7 @@ int main()
     string word;
 
     print_health(hp);
-
+    cout<<"> ";
     while (cin>>word) {
       if(word==":reset") { //if you want to reset the word
         makeRandomLetters(base);
@@ -176,14 +176,13 @@ int main()
     if(dictionary.find(word)!=dictionary.end()) {
       //check if the word is present in the dictionary
       if(check_word(word,base)) {
-        cout<<"word possible"<<endl;
+        cout<<"word possible\n"<<endl;
         player_damage(word,&hp[1]); //hp[1] refers to enemy health
         if(check_complete(hp)) break; //if helath gone berlow zero end the game
         enemy_damage(&hp[0]); //hp[0] is the player health
         if(check_complete(hp)) break;
         makeRandomLetters(base);
         print_health(hp);
-
   }
       else
         cout<<"word not possible"<<endl;
@@ -191,5 +190,7 @@ int main()
     else  {
        cout<<"hiya iya!"<<endl;
   }
+  cout<<"> ";
   }
+  cout<<endl;
 }
