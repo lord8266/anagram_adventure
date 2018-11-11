@@ -4,6 +4,9 @@ A puzzle game where you defeat enemies by spelling words
 a very **quick and simple** game  
 
 ## Instructions  
+  
+*you will be given a list like this*  
+  
 `---------------------`  
 `| A | I | P | U | D |`  
 `---------------------`  
@@ -13,9 +16,9 @@ a very **quick and simple** game
 `---------------------`  
 `| G | T | N | E | N |`  
 `---------------------`  
-
-*you will be given a list like this*  
-
+  
+ Health will be displayed in this format  
+  
 `++++++++++++ Health +++++++++++++`  
 `player ====================`  
 `enemy  ==================`  
