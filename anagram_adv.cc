@@ -167,11 +167,7 @@ int main()
         printLettersInAGrid(base);
         continue;
       }
-      if(word==":print") {//if you want to print the letters again and dont
-                           //want to scroll up
-        printLettersInAGrid(base);
-        continue;
-      }
+      
 
     if(dictionary.find(word)!=dictionary.end()) {
       //check if the word is present in the dictionary
