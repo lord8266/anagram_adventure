@@ -19,11 +19,11 @@ bool check_word(string word,string base) {
   sort(base.begin(),base.end());
   //sort both the words
   //notice im making a copy here
-  int off=0; //offset for the base word
+  unsigned int off=0; //offset for the base word
   //the base will always be bigger than the word
 
   bool ret=true;
-  for (int i=0;i!=word.size();) {
+  for (unsigned int i=0;i!=word.size();) {
 
     if (word[i]==base[i+off]) {
       i++;
@@ -122,14 +122,14 @@ void print_health(int *hp) { //prints health of both
   }
   cout<<"\n+++++++++++++++++++++++++++++++++\n"<<endl;
 }
-int enemy_damage(int* player_health) {
+void enemy_damage(int* player_health) {
   static int check = 0;
   if (check++ ==3)
     *player_health-=5;
   *player_health-=15;
 }
 
-int player_damage(const string& word,int *enemy_health) {
+void player_damage(const string& word,int *enemy_health) {
   *enemy_health-= word.size()*4;
   //outputs damage based on word size multiplied by 3
   //so more bigger word your damage increases three folds
