@@ -12,28 +12,19 @@ for example you will be given a list like this
  | G | T | N | E | N |
  ---------------------
 
-Enter your word:
+ ++++++++++++ Health +++++++++++++
+ player ==================================================
+ enemy  ==================================================
+ +++++++++++++++++++++++++++++++++
+
+ >
 now the word paid can be spelled
 when you type in paid you get
 
- word: paid outputs: 22 damage
- ++++++++++++++++++++++++++++++
- enemy : steel     |============================                      |
- player: silver    |==================================================|
- ++++++++++++++++++++++++++++++
+++++++++++++ Health +++++++++++++
+player ================================================
+enemy  ====================================
++++++++++++++++++++++++++++++++++
 
-where steel is the enemy's name and silver is you
-silver has full health as steel lost health based on the word you gave
-
-and now it is the enemy's turn
-
-chance of: enemy: steel
-
-Sending damage: 11
-++++++++++++++++++++++++++++++
-enemy : steel     |============================                      |
-player: silver    |=======================================           |
-++++++++++++++++++++++++++++++
-
-if you see the enemy steel gave you 11 damage in return
-this damage will vary as you move on
+you have given damage to enemy and player enemy has given it back to you
+and continue from here
